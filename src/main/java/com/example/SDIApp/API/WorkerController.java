@@ -27,6 +27,7 @@ public class WorkerController {
         return workerService.addService(worker);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping("/all")
     public List<Worker> getAllWorkers()
     {
